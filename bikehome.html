@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header with Logo</title>
+    <style>
+        body {
+           display: block;
+            font-family: Arial, sans-serif;
+            background-color:whitesmoke;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #000000;
+            color: #fff;
+        }
+        .header h4 {
+            margin-right: 35px;
+        }
+        .nav {
+            display: flex;
+            gap: 25px;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav a:hover {
+            background-color: #555;
+        }
+        .pagehead {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background-color: #e9e9e9;
+            color: #000000;
+        }
+        .page-nav {
+            display: flex;
+            gap: 25px;
+        }
+        .page-nav a {
+            color: #000000;
+            text-decoration: none;
+            padding: 8px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .page-nav a:hover {
+            background-color: #ffffff;
+        }
+        .search-container {
+            background-image: url('200-duke-banner-web - Copy.jpg');
+            background-color: rgba(0, 0, 0, 0.623);
+           background-blend-mode:multiply ;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 300px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box; 
+        }
+        .search-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .search-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .search-button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Fixed box-shadow */
+        }
+        .gridbrand {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    padding: 10px; 
+}
+.brand{
+    margin-top: 50px;
+    margin-bottom: 20px;  
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+.gridbrand h2{
+    margin-left: 40px ;
+    text-align: center;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.grid-card {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    align-content: center;
+    background-color: #ffffff; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+   
+}
+.grid-card img{
+    width: 50%;
+    scale: 0.5;
+   
+}
+.grid-card a{
+    margin-left: 10px;
+    text-align: center;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 10px;
+    border: #000000;
+}
+.topbikes{
+    margin-top: 50px;
+    margin-bottom: 20px;  
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+.gridmodel {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.grid-cardmodel {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    width: 300px; 
+    text-align: center;
+    transition: transform 0.3s ease; 
+}
+.grid-cardmodel img{
+    width: 100%;
+    height: 130px;
+    scale: 1;
+    
+}
+.content-bike{
+   line-height: 1;
+    height: 170px; 
+}
+.content-bike h4{
+      font-size: large;
+      font-family: 'Courier New', Courier, monospace;
+      color: #000000;
+      
+.content-bike h5{
+   
+    font-size:medium;
+    font-family: 'Courier New', Courier, monospace;
+    color: #777777;
+  
+}
+
+.div h3{
+    background-color: #000000;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h4>Bike Info</h4>
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#login">Login</a>
+        </nav>
+    </header>
+    <div class="pagehead">
+        <nav class="page-nav">
+            <a href="#home">Bike</a>
+            <a href="#home">Electric</a>
+            <a href="#home">Scooters</a>
+            <a href="#about">Latest</a>
+            <a href="#contact">Bike finance</a>
+            <a href="#login">Compare</a>
+        </nav>
+    </div>
+    <div class="search-container">
+        <form action="/search" method="get">
+            <input type="text" class="search-input" name="query" placeholder="Search for bikes....">
+            <button type="submit" class="search-button">Search</button>
+        </form>
+    </div>
+    <div class="brand">
+        <h2>BIKE BRANDS</h2>
+        <grid class="gridbrand">
+            <div class="grid-card">
+                <img src="C:\Users\CCLAB\Desktop\front end\bikeinfo\bajaj.jpg" alt="bajaj" >
+                <a href="#login">BAJAJ</a>
+            </div>
+            <div class="grid-card">
+                <img src="C:\Users\CCLAB\Desktop\front end\bikeinfo\TVS-Motor-Logo.png" alt="bajaj" >
+                <a href="#login">TVS</a>
+            </div>
+            <div class="grid-card">
+                <img src="C:\Users\CCLAB\Desktop\front end\bikeinfo\hero.png" alt="bajaj" >
+                <a href="#login">HERO</a>
+            </div>
+            <div class="grid-card">
+                <img src="C:\Users\CCLAB\Downloads\honda.png" alt="bajaj" style="scale: 0.4;" >
+                <a href="#login">HONDA</a>
+            </div>
+            <div class="grid-card">
+                <img src="C:\Users\CCLAB\Desktop\front end\bikeinfo\yamaha.png" alt="bajaj" >
+                <a href="#login">YAMAHA</a>
+            </div>
+            <div class="grid-card">
+                <img src="C:\Users\CCLAB\Desktop\front end\bikeinfo\royalen.jpg" alt="bajaj" >
+                <a href="#login">ROYAL ENFIELD</a>
+            </div>
+            <div class="grid-card">
+                <img src="C:\Users\CCLAB\Downloads\suzuki logo.png" alt="bajaj" style="scale: 0.3;" >
+                <a href="#login">SUZUKI</a>
+            </div>
+            <div class="grid-card">
+                <img src="C:\Users\CCLAB\Desktop\front end\bikeinfo\ktm.png" alt="bajaj" >
+                <a href="#login">KTM</a>
+            </div>
+        </grid>
+    </div>
+
+
+    <div class="topbikes">
+        <h2>TOP BIKE MODELS</h2>
+        <grid class="gridmodel">
+            <div class="grid-cardmodel">
+                <img src="C:\Users\CCLAB\Downloads\splender1.jpg" alt="bajaj" >
+                <div class="content-bike">
+                    <h4>HERO SPLENDER</h4>
+                    <H5>Price : 90000 |
+                    power : 100 cc |
+                    <h5>Mileage : 70 km/l | Top Speed : 120 </H5>
+                    <a href="#login">Detailes</a>
+                </div>
+               
+            </div>
+            <div class="grid-cardmodel">
+                <img src="C:\Users\CCLAB\Downloads\sp.jpg" alt="bajaj" >
+                <div class="content-bike">
+                    <h4>HONDA SHINE</h4>
+                    <H5>Price : 90000 |
+                    power : 125 cc </H5>
+                    <h5>Mileage : 60 km/l | Top Speed : 120 </H5>
+                    <a href="#login">Detailes</a>
+                </div>
+            </div>
+            <div class="grid-cardmodel">
+                <img src="C:\Users\CCLAB\Downloads\pulser150.jpg" alt="bajaj" >
+                <div class="content-bike">
+                    <h4>BAJAJ PULSAR</h4>
+                    <H5>Price : 110000 |
+                    power : 150 cc </H5>
+                    <h5>Mileage : 50 km/l | Top Speed : 120 </H5>
+                    <a href="#login">Detailes</a>
+                </div>
+            </div>
+            <div class="grid-cardmodel">
+                <img src="C:\Users\CCLAB\Downloads\ns.jpg" alt="bajaj"  >
+                <div class="content-bike">
+                    <h4>BAJAJ NS200</h4>
+                    <H5>Price : 160000
+                    power : 200 cc </H5>
+                    <h5>Mileage : 70 km/l | Top Speed : 120 </H5>
+                    <a href="#login">Detailes</a>
+                </div>
+            </div>
+            <div class="grid-cardmodel">
+                <img src="C:\Users\CCLAB\Downloads\mt15.jpg" alt="bajaj" >
+                <div class="content-bike">
+                    <h4>YAMAHA MT</h4>
+                    <H5>Price : 160000 |
+                    power : 159 cc </H5>
+                    <h5>Mileage : 55 km/l | Top Speed : 140 </H5>
+                    <a href="#login">Detailes</a>
+                </div>
+            </div>
+            <div class="grid-cardmodel">
+                <img src="C:\Users\CCLAB\Downloads\download (2).jpg" alt="bajaj" >
+                <div class="content-bike">
+                    <h4>BAJAJ PLATINA</h4>
+                    <H5>Price : 90000 |
+                    power : 100 cc </H5>
+                    <h5>Mileage : 70 km/l | Top Speed : 120 </H5>
+                    <a href="#login">Detailes</a>
+                </div>
+            </div>
+            <div class="grid-cardmodel">
+                <img src="C:\Users\CCLAB\Downloads\appachi.jpg" alt="bajaj"" >
+                <div class="content-bike">
+                    <h4>YAMAHA APPACHI</h4>
+                    <H5>Price : 120000 |
+                    power : 200 cc </H5>
+                    <h5>Mileage : 50 km/l | Top Speed : 130 </H5>
+                    <a href="#login">Detailes</a>
+                </div>
+            </div>
+            <div class="grid-cardmodel">
+                <img src="C:\Users\CCLAB\Downloads\fz.jpg" alt="bajaj" >
+                <div class="content-bike">
+                    <h4>YAMAHA FZ V3</h4>
+                    <H5>Price : 130000 |
+                  power : 150 cc </H5>
+                  <h5>Mileage : 55 km/l | Top Speed : 130 </H5>
+                    <a href="#login">Detailes</a>
+                </div>
+            </div>
+            <div class="grid-cardmodel">
+                <img src="C:\Users\CCLAB\Downloads\hornet.jpg" alt="bajaj" >
+                <div class="content-bike">
+                    <h4>HONDA HORNET</h4>
+                    <H5>Price : 130000 |
+                    power : 180 cc </H5>
+                    <h5>Mileage : 50 km/l | Top Speed : 120 </H5>
+                    <a href="#login">Detailes</a>
+                </div>
+            </div>
+            <div class="grid-cardmodel">
+                <img src="C:\Users\CCLAB\Downloads\ns200.jpg" alt="bajaj" >
+                <div class="content-bike">
+                    <h4>BAJAJ NS 160</h4>
+                    <H5>Price : 130000 |
+                    power : 160 cc </H5>
+                    <h5>Mileage : 50 km/l | Top Speed : 130 </H5>
+                    <a href="#login">Detailes</a>
+                </div>
+            </div>
+        </grid>
+    </div>
+    <div class="topbikes">
+        <h2>MOST SELLING BIKES</h2>
+        <grid class="gridmodel">
+            <div class="grid-cardmodel">
+                <img src="C:\Users\CCLAB\Downloads\splender1.jpg" alt="bajaj" >
+                <div class="content-bike">
+                    <h4>HERO SPLENDER</h4>
+                    <H5>Price : 90000 |
+                    power : 100 cc |
+                    <h5>Mileage : 70 km/l | Top Speed : 120 </H5>
+                    <a href="#login">Detailes</a>
+                </div>
+               
+            </div>
+            <div class="grid-cardmodel">
+                <img src="C:\Users\CCLAB\Downloads\sp.jpg" alt="bajaj" >
+                <div class="content-bike">
+                    <h4>HONDA SHINE</h4>
+                    <H5>Price : 90000 |
+                    power : 125 cc </H5>
+                    <h5>Mileage : 60 km/l | Top Speed : 120 </H5>
+                    <a href="#login">Detailes</a>
+                </div>
+            </div>
+            <div class="grid-cardmodel">
+                <img src="C:\Users\CCLAB\Downloads\pulser150.jpg" alt="bajaj" >
+                <div class="content-bike">
+                    <h4>BAJAJ PULSAR</h4>
+                    <H5>Price : 110000 |
+                    power : 150 cc </H5>
+                    <h5>Mileage : 50 km/l | Top Speed : 120 </H5>
+                    <a href="#login">Detailes</a>
+                </div>
+            </div>
+            <div class="grid-cardmodel">
+                <img src="C:\Users\CCLAB\Downloads\ns.jpg" alt="bajaj"  >
+                <div class="content-bike">
+                    <h4>BAJAJ NS200</h4>
+                    <H5>Price : 160000
+                    power : 200 cc </H5>
+                    <h5>Mileage : 70 km/l | Top Speed : 120 </H5>
+                    <a href="#login">Detailes</a>
+                </div>
+            </div>
+            <div class="grid-cardmodel">
+                <img src="C:\Users\CCLAB\Downloads\mt15.jpg" alt="bajaj" >
+                <div class="content-bike">
+                    <h4>YAMAHA MT</h4>
+                    <H5>Price : 160000 |
+                    power : 159 cc </H5>
+                    <h5>Mileage : 55 km/l | Top Speed : 140 </H5>
+                    <a href="#login">Detailes</a>
+                </div>
+            </div>
+        </grid>
+    </div>
+<div class="footer">
+    <h3 style="background-color: #000000;padding: 20px;text-align: center;color: #fff;margin-top: 50px;">
+        @ copyrights 2024
+    </h3>
+</div>
+</body>
+</html>
+
